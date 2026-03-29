@@ -1,0 +1,94 @@
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-image: url('../../../static/images/home_background.png');
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.body {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+}
+
+.estadisticas, .ranking, .logros {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 0.4rem;
+}
+
+h3 {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+  color: #4a90e2;
+}
+
+p {
+  margin: 0.3rem 0;
+  color: #555;
+}
+
+ol {
+  padding-left: 1.5rem;
+}
+
+ol li {
+  margin: 0.4rem 0;
+  color: #444;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin: 0.4rem 0;
+  font-weight: 500;
+  color: #333;
+}
+
+.logros li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .body {
+    padding: 1rem;
+  }
+
+  .estadisticas, .ranking, .logros {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+

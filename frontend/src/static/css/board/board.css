@@ -1,0 +1,181 @@
+/* El contenedor principal de la página */
+.board-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../images/home_background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenedor tenga al menos la altura del viewport */
+}
+
+/* Estilos de los hexágonos */
+.hexagon {
+  fill: rgba(180, 180, 180, 0.2);
+  stroke: #000;
+  stroke-width: 0.8;
+  transition: stroke 0.3s ease, filter 0.3s ease;
+}
+
+.hexagon-hover {
+  stroke: #ff5722;
+  stroke-width: 2px;
+  fill-opacity: 0.5;
+}
+
+/* Estilos del texto dentro de los hexágonos */
+.hexagon-text {
+  font-family: Arial, sans-serif;
+  font-size: 0.18em;
+  font-weight: 400;
+  text-anchor: middle;
+  dominant-baseline: central;
+  pointer-events: none;
+  fill: #000000;
+  stroke: #000000;
+  stroke-width: 0.2;
+}
+
+/* Nuevas reglas para los elementos en la parte inferior */
+.form-container label, 
+.form-container input, 
+.form-container select, 
+.form-container button {
+  color: #ffffff; /* Cambiar color de texto a blanco */
+}
+
+.form-container button {
+  background-color: #333333; /* Fondo oscuro para los botones */
+  border: 1px solid #ffffff; /* Borde blanco */
+  padding: 10px;
+  cursor: pointer;
+  color: #ffffff; /* Asegura que el texto sea blanco */
+}
+
+.form-container button:hover {
+  background-color: #555555; /* Cambia a un gris más claro cuando el botón está en hover */
+}
+
+.form-container label {
+  font-weight: bold; /* Negrita en las etiquetas */
+  color: #ffffff; /* Color blanco para las etiquetas */
+}
+
+.form-container input, 
+.form-container select {
+  background-color: #222222; /* Fondo oscuro para los inputs */
+  border: 1px solid #ffffff; /* Borde blanco */
+  padding: 5px;
+  color: #ffffff; /* Asegura que el texto dentro de los inputs también sea blanco */
+}
+
+.form-container {
+  margin-top: 20px; /* Separación de los formularios */
+  color: #ffffff; /* Cambia el color del texto en todo el contenedor */
+}
+
+.territory-image {
+  display: block;
+  margin: auto;
+}
+
+.dados {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.elements-container {
+  display: flex;
+  flex-direction: column; /* Coloca los hijos (texto y .imagenes) en columna */
+  align-items: center; /* Centra los hijos horizontalmente */
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(249, 249, 249, 0.295);
+}
+
+.imagenes {
+  display: flex; /* Hace que las imágenes estén en fila */
+  gap: 15px; /* Espacio entre las imágenes */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+}
+
+.elemento {
+  width: 100px; /* ajusta el tamaño de los elementos */
+  height: 100px;
+  display: flex; /* centra el contenido interno */
+  justify-content: center;
+  align-items: center;
+  font-size: 14px; /* tamaño del texto */
+  margin: 5px; /* separación extra si se necesita */
+}
+
+.turn-screen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.turn-screen h2 {
+  margin-bottom: 20px;
+}
+
+.turn-screen button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.turn-screen button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo general para el contenedor de botones */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 10px; /* Espaciado entre botones */
+  margin-top: 20px; /* Separación superior */
+}
+
+/* Estilo para cuando hay dos botones */
+.button-container.two-buttons {
+  justify-content: center; /* Ambos botones estarán centrados */
+}
+
+/* Estilo para cuando hay un solo botón */
+.button-container.single-button {
+  justify-content: center; /* El botón único estará centrado */
+}
+
+/* Estilo para los botones */
+.game-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #333333; /* Cambiar color si es necesario */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+

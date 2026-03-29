@@ -1,0 +1,128 @@
+.matchList-page-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../images/home_background.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.matchList-page-container h1 {
+    text-align: center;
+    font-size: 5em;
+    margin-top: 60px;
+    font-family: "MedievalSharp", regular;
+}
+
+.matchList-page-container h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-family: "Macondo", regular;
+}
+
+.hero-div {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;        
+    max-width: 1200px;  
+    min-width: 800px;   
+    max-height: none;   
+}
+
+.scrollable-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;      
+    max-height: none; 
+    overflow-y: auto;
+    padding-right: 0; 
+}
+
+.scrollable-div::-webkit-scrollbar {
+    width: 80px;
+}
+
+.scrollable-div::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.scrollable-div::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.custom-table {
+    width: 100%;       
+    max-width: 100%;
+    margin: auto;
+    table-layout: fixed;
+}
+
+th, td {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle; 
+}
+
+.table-row {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+.table-items {
+    padding: 20px;
+    font-size: 25px;
+}
+
+.return-button {
+    margin-top: 20px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "MedievalSharp", regular;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transform: translateY(0);
+}
+
+.return-button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.763);
+    transform: translateY(-5px);
+}
+
+.start-match-button, .return-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #3d4241;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "MedievalSharp";
+    margin: 10px;
+}
+
+.start-match-button:hover, .return-button:hover {
+    opacity: 0.8;
+}

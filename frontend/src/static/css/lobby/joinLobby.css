@@ -1,0 +1,75 @@
+/* Fondo del join lobby */
+.join-lobby-page-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../images/home_background.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor del formulario de join lobby */
+.join-lobby-div {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    width: 90%;
+}
+
+/* Títulos */
+.join-lobby-div h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2f324f;
+    text-align: center;
+}
+
+.join-lobby-div h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #555;
+}
+
+/* Input y botón de unirse */
+.join-lobby-div input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    outline: none;
+}
+
+.join-lobby-div input:focus {
+    border-color: #3d4241;
+}
+
+.join-lobby-div button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #3d4241;
+    color: white;
+    transition: opacity 0.3s ease;
+}
+
+.join-lobby-div button:hover {
+    opacity: 0.8;
+}

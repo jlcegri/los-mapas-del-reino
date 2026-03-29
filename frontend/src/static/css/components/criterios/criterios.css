@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=MedievalSharp&display=swap');
+
+.home-page-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../images/home_background.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}   
+
+.elements-container {
+    display: flex;
+    flex-direction: column; /* Coloca los hijos (texto y .imagenes) en columna */
+    align-items: center; /* Centra los hijos horizontalmente */
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(249, 249, 249, 0.295);
+}
+
+.texto {
+    margin-bottom: 20px; /* Espacio entre el texto y las imágenes */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.imagenes {
+    display: flex; /* Hace que las imágenes estén en fila */
+    gap: 15px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+}
+
+.elemento {
+    width: 100px; /* ajusta el tamaño de los elementos */
+    height: 100px;
+    display: flex; /* centra el contenido interno */
+    justify-content: center;
+    align-items: center;
+    font-size: 14px; /* tamaño del texto */
+    margin: 5px; /* separación extra si se necesita */
+}
+
+.criterios {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

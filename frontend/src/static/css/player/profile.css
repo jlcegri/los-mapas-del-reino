@@ -1,0 +1,65 @@
+.perfil-page-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../static/images/home_background.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.perfil-page-container h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.hero-div {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.hero-div h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+}
+
+.hero-div h3 {
+    text-align: center;
+    font-family: 'Lakki Reddy';
+}
+
+.input-wrapper {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}

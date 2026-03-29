@@ -1,0 +1,104 @@
+.lobby-page-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../images/home_background.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lobby-div {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    width: 90%;
+}
+
+.lobby-div h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2f324f;
+    text-align: center;
+}
+
+.lobby-div h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #555;
+}
+
+.lobby-div ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.lobby-div li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.buttons-container {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    gap: 10px; /* Espaciado entre botones */
+    flex-wrap: wrap; /* Permite que los botones se ajusten en varias filas si es necesario */
+}
+
+.buttons-container button {
+    flex: 1 1 auto; /* Hace que todos los botones tengan el mismo tamaño proporcional */
+    max-width: 200px; /* Limita el ancho máximo de cada botón */
+    text-align: center;
+}
+
+.btn-iniciar, .btn-salir {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-iniciar {
+    background-color: #3d4241;
+    color: white;
+}
+
+.btn-salir {
+    background-color: #3d4241;
+    color: white;
+}
+
+.btn-iniciar:hover, .btn-salir:hover {
+    opacity: 0.8;
+}
+.players-list {
+    margin-top: 20px;
+}
+
+.players-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.players-list li {
+    margin: 5px 0;
+    font-size: 18px;
+}
