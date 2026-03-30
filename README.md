@@ -21,6 +21,8 @@
 
 The project was developed in the context of the **DP1 (Diseño y Pruebas 1)** course and is intended to showcase software engineering practices such as layered architecture, REST API design, authentication, testing, documentation, and iterative refactoring.
 
+Original board game can be found [here](https://cacahuetegames.com/los-mapas-del-reino/). Thanks to Cacahuete Games and their authors for creating such an amazing game.
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -154,8 +156,8 @@ Optional but recommended:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/jlcegri/DP1-2024-2025--l6-02-main.git
-cd DP1-2024-2025--l6-02-main
+git clone https://github.com/jlcegri/los-mapas-del-reino.git
+cd los-mapas-del-reino
 ```
 
 ### 2. Run the backend
